@@ -1,0 +1,293 @@
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+
+/* html,
+body {
+    height: 100%;
+} */
+
+body {
+    background-color: #ee5d5d;
+    margin: 0px;
+    /* text-align: center; */
+    font: medium/1.6em 'lucida calligraphy', 'lucida handwriting', cursive;
+}
+
+
+/* #allcontent {
+    width: 800px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #740707;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+h1,
+h2,
+h3 {
+    color: #954b4b;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 135%;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+h4 {
+    font-size: 110%;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+#header {
+    background-color: #740707;
+    margin: 10px 10px 0px 10px;
+    padding: 10px;
+    height: 250px;
+}
+
+#main {
+    background-color: #ffc7c7;
+    font-size: 105%;
+    padding: 15px;
+    margin: 0px 330px 10px 10px;
+}
+
+#sidebar {
+    background-color: #ffc7c7;
+    font-size: 105%;
+    padding: 15px;
+    margin: 0px 10px 10px 10px;
+    text-align: center;
+    position: absolute;
+    top: 351px;
+    right: 0px;
+    width: 280px;
+}
+
+.slogan {
+    color: #954b4b;
+}
+
+.beanheading {
+    text-align: center;
+    line-height: 1.8em;
+}
+
+#myLinks {
+    margin: 10px;
+}
+
+ul.about {
+    font-size: 115%;
+    text-align: left;
+}
+
+ul.also {
+    font-size: 100%;
+    font-style: oblique;
+}
+
+.ourHistory {
+    text-align: left;
+    text-indent: 4em;
+}
+
+ul.ourHistoryFacts,
+ol {
+    text-align: left;
+}
+
+#smoke {
+    color: black;
+    border-color: white;
+    border-width: 3px;
+    border-style: dashed;
+    background-color: #a7cece;
+    padding: 25px;
+    padding-left: 325px;
+    margin: 30px;
+    /* margin-right: 200px; */
+    background-image: url(images/png.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 0px;
+}
+
+p.hideBlock {
+    font-size: 16px;
+    color: #777;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a.myLinks {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: #740707;
+    border: 3px solid #740707;
+}
+
+a.myLinks:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: #740707;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: white;
+    border: 3px solid #740707;
+}
+
+a.myLinks:active {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: #007e7e;
+}
+
+.content_toggle {
+    display: inline-block;
+    padding: 20px 100px;
+    background: #007e7e;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid #32145a;
+}
+
+.content_toggle:hover {
+    color: #fff;
+    background: #949c4d;
+    border-bottom: 3px solid #32145a;
+}
+
+.content_toggle:active {
+    background: #6d1010;
+}
+
+#beverages {
+    border-width: thin;
+    border-style: solid;
+    border-color: 007e7e;
+    width: 200px;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 1;
+    float: right;
+    /* background-image: url(images/drinks.png);
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: top left; */
+}
+
+#beverages h2 {
+    color: black;
+}
+
+#beverages h3 {
+    color: #d12c47;
+}
+
+#footer {
+    background-color: #740707;
+    color: #efe5d0;
+    font-size: 80%;
+    text-align: right;
+    /* line-height: normal; */
+    padding: 15px;
+    margin: 10px;
+    clear: right;
+}
+
+.music {
+    text-align: left;
+    font-family: serif;
+}
+
+.cd {
+    font-style: italic;
+}
+
+.artist {
+    font-weight: bold;
+}
+
+#linksOnPage a:link {
+    color: #b76666;
+    text-decoration: none;
+    border-bottom: thin dotted #b76666;
+}
+
+#linksOnPage a:visited {
+    color: #675c47;
+    text-decoration: none;
+    border-bottom: thin dotted #675c47;
+}
+
+
+/* #linksOnPage a:hover {
+    color: #0d5353;
+    background: #f88396;
+} */
+
+.exampleTitle {
+    text-align: left;
+    border: 1px solid black;
+    /* Параметры рамки */
+    border-bottom: none;
+    /* Убираем линию снизу */
+    padding: 4px;
+    /* Поля вокруг текста */
+    display: inline;
+    /* Устанавливаем как встроенный элемент */
+    background: #b39a2d;
+    /* Цвет фона */
+    font-weight: bold;
+    /* Жирное начертание */
+    font-size: 90%;
+    /* Размер текста */
+    margin: 0px;
+    /* Убираем отступы вокруг */
+    white-space: nowrap;
+    /* Отменяем переносы текста */
+}
+
+.example {
+    text-align: left;
+    border: dashed 1px #634f36;
+    /* Параметры рамки */
+    background: #fffff5;
+    /* Цвет фона */
+    font-family: "Courier New", Courier, monospace;
+    /* Шрифт текста */
+    padding: 7px;
+    /* Поля вокруг текста */
+    margin: 0 0 1em;
+    /* Отступы вокруг */
+}

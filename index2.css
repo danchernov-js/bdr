@@ -1,0 +1,127 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: cursive;
+    font-size: medium;
+    text-align: center;
+    line-height: 1.6em;
+}
+
+h1,
+h2,
+h3 {
+    color: #007e7e;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+h3 {
+    font-size: 120%;
+}
+
+h4 {
+    font-size: 110%;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+ul.about {
+    font-size: 115%;
+    text-align: left;
+}
+
+ul.also {
+    font-size: 100%;
+    font-style: oblique;
+}
+
+#smoke {
+    background-color: #d33710;
+    color: black;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    padding: 25px;
+    padding-top: 325px;
+    margin: 10px;
+    background-image: url(images/png.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 40px;
+}
+
+.ourHistory {
+    text-align: left;
+    text-indent: 4em;
+}
+
+ul.ourHistoryFacts,
+ol {
+    text-align: left;
+}
+
+p.hideBlock {
+    font-size: 16px;
+    color: #777;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a.myLinks {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: #007e7e;
+}
+
+a.myLinks:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: #007e7e;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: white;
+    border: 3px solid #007e7e;
+}
+
+a.myLinks:active {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: #007e7e;
+}
+
+.content_toggle {
+    display: inline-block;
+    padding: 20px 100px;
+    background: #007e7e;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border-bottom: 3px solid #32145a;
+}
+
+.content_toggle:hover {
+    color: #fff;
+    background: #949c4d;
+    border-bottom: 3px solid #32145a;
+}
+
+.content_toggle:active {
+    background: #6d1010;
+}
