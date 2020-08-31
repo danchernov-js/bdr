@@ -13,7 +13,7 @@ body {
     background-color: #ee5d5d;
     margin: 0px;
     /* text-align: center; */
-    font: medium/1.6em 'lucida calligraphy', 'lucida handwriting', cursive;
+    font: medium/1.6em cursive;
 }
 
 
@@ -54,29 +54,71 @@ blockquote {
 }
 
 #header {
-    background-color: #740707;
+    background: radial-gradient(#740707, black);
     margin: 10px 10px 0px 10px;
     padding: 10px;
     height: 250px;
 }
 
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+#textlogo {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    z-index: 0;
+}
+
+#coupon {
+    position: fixed;
+    top: 300px;
+    left: -90px;
+}
+
+#coupon a,
+img {
+    border: none;
+}
+
+#tableContainer {
+    display: table;
+    text-align: center;
+    border-spacing: 10px;
+    width: 100%;
+}
+
+#tableRow {
+    display: table-row;
+}
+
 #main {
+    display: table-cell;
     background-color: #ffc7c7;
     font-size: 105%;
     padding: 15px;
-    margin: 0px 330px 10px 10px;
+    vertical-align: top;
+    width: 60%;
 }
 
 #sidebar {
+    display: table-cell;
     background-color: #ffc7c7;
     font-size: 105%;
     padding: 15px;
-    margin: 0px 10px 10px 10px;
-    text-align: center;
-    position: absolute;
-    top: 351px;
-    right: 0px;
-    width: 280px;
+    vertical-align: top;
+}
+
+#actions {
+    display: table-cell;
+    background-color: #ffc7c7;
+    font-size: 105%;
+    padding: 15px;
+    vertical-align: top;
 }
 
 .slogan {
@@ -89,8 +131,14 @@ blockquote {
 }
 
 #myLinks {
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
+    text-align: center;
 }
+
+
+/* #header-links {
+    background: radial-gradient(#740707, black);
+} */
 
 ul.about {
     font-size: 115%;
@@ -145,8 +193,8 @@ a.myLinks {
     color: white;
     font-size: 130%;
     padding: 10px 10px;
-    background: #740707;
-    border: 3px solid #740707;
+    background: radial-gradient(#740707, black);
+    border: 1px solid black;
 }
 
 a.myLinks:hover {
@@ -156,7 +204,7 @@ a.myLinks:hover {
     font-size: 130%;
     padding: 10px 10px;
     background: white;
-    border: 3px solid #740707;
+    border: 1px solid #740707;
 }
 
 a.myLinks:active {
@@ -165,7 +213,7 @@ a.myLinks:active {
     color: white;
     font-size: 130%;
     padding: 10px 10px;
-    background: #007e7e;
+    background: #ffc7c7;
 }
 
 .content_toggle {
@@ -215,14 +263,13 @@ a.myLinks:active {
 }
 
 #footer {
-    background-color: #740707;
+    background: radial-gradient(#740707, black);
     color: #efe5d0;
     font-size: 80%;
     text-align: right;
     /* line-height: normal; */
     padding: 15px;
-    margin: 10px;
-    clear: right;
+    margin: 10px 10px 10px 10px;
 }
 
 .music {
