@@ -53,7 +53,7 @@ blockquote {
     font-style: italic;
 }
 
-#header {
+header {
     background: radial-gradient(#740707, black);
     margin: 10px 10px 0px 10px;
     padding: 10px;
@@ -96,7 +96,7 @@ img {
     display: table-row;
 }
 
-#main {
+.main {
     display: table-cell;
     background-color: #ffc7c7;
     font-size: 105%;
@@ -105,7 +105,7 @@ img {
     width: 60%;
 }
 
-#sidebar {
+section#beverages {
     display: table-cell;
     background-color: #ffc7c7;
     font-size: 105%;
@@ -113,7 +113,7 @@ img {
     vertical-align: top;
 }
 
-#actions {
+aside {
     display: table-cell;
     background-color: #ffc7c7;
     font-size: 105%;
@@ -121,24 +121,20 @@ img {
     vertical-align: top;
 }
 
-.slogan {
+
+/* .slogan {
     color: #954b4b;
 }
 
 .beanheading {
     text-align: center;
     line-height: 1.8em;
-}
+} */
 
-#myLinks {
+nav {
     margin: 10px 10px 0px 10px;
     text-align: center;
 }
-
-
-/* #header-links {
-    background: radial-gradient(#740707, black);
-} */
 
 ul.about {
     font-size: 115%;
@@ -216,6 +212,41 @@ a.myLinks:active {
     background: #ffc7c7;
 }
 
+.return-up {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: radial-gradient(#740707, black);
+    border: 1px solid black;
+}
+
+.return-up:hover {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+    color: #740707;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: white;
+    border: 1px solid #740707;
+}
+
+.return-up:active {
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: #ffc7c7;
+}
+
 .content_toggle {
     display: inline-block;
     padding: 20px 100px;
@@ -238,31 +269,7 @@ a.myLinks:active {
     background: #6d1010;
 }
 
-#beverages {
-    border-width: thin;
-    border-style: solid;
-    border-color: 007e7e;
-    width: 200px;
-    padding: 20px;
-    margin-left: 20px;
-    margin-top: 20px;
-    line-height: 1;
-    float: right;
-    /* background-image: url(images/drinks.png);
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-position: top left; */
-}
-
-#beverages h2 {
-    color: black;
-}
-
-#beverages h3 {
-    color: #d12c47;
-}
-
-#footer {
+footer {
     background: radial-gradient(#740707, black);
     color: #efe5d0;
     font-size: 80%;
@@ -302,39 +309,3 @@ a.myLinks:active {
     color: #0d5353;
     background: #f88396;
 } */
-
-.exampleTitle {
-    text-align: left;
-    border: 1px solid black;
-    /* Параметры рамки */
-    border-bottom: none;
-    /* Убираем линию снизу */
-    padding: 4px;
-    /* Поля вокруг текста */
-    display: inline;
-    /* Устанавливаем как встроенный элемент */
-    background: #b39a2d;
-    /* Цвет фона */
-    font-weight: bold;
-    /* Жирное начертание */
-    font-size: 90%;
-    /* Размер текста */
-    margin: 0px;
-    /* Убираем отступы вокруг */
-    white-space: nowrap;
-    /* Отменяем переносы текста */
-}
-
-.example {
-    text-align: left;
-    border: dashed 1px #634f36;
-    /* Параметры рамки */
-    background: #fffff5;
-    /* Цвет фона */
-    font-family: "Courier New", Courier, monospace;
-    /* Шрифт текста */
-    padding: 7px;
-    /* Поля вокруг текста */
-    margin: 0 0 1em;
-    /* Отступы вокруг */
-}
