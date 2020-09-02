@@ -53,12 +53,17 @@ blockquote {
     font-style: italic;
 }
 
-header {
+header.top {
     background: radial-gradient(#740707, black);
     margin: 10px 10px 0px 10px;
     padding: 10px;
     height: 250px;
 }
+
+
+/* time {
+    text-align: left;
+} */
 
 #logo {
     position: absolute;
@@ -96,7 +101,8 @@ img {
     display: table-row;
 }
 
-.main {
+.main,
+#blog {
     display: table-cell;
     background-color: #ffc7c7;
     font-size: 105%;
@@ -114,6 +120,22 @@ section#beverages {
 }
 
 aside {
+    display: table-cell;
+    background-color: #ffc7c7;
+    font-size: 105%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+#offer-bday {
+    display: table-cell;
+    background-color: #ffc7c7;
+    font-size: 105%;
+    padding: 15px;
+    vertical-align: top;
+}
+
+#offer-freecoffee {
     display: table-cell;
     background-color: #ffc7c7;
     font-size: 105%;
