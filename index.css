@@ -11,8 +11,9 @@ body {
 
 body {
     background-color: #ee5d5d;
-    margin: 0px;
-    /* text-align: center; */
+    margin: 10px;
+    padding: 0;
+    text-align: center;
     font: medium/1.6em cursive;
 }
 
@@ -79,6 +80,63 @@ header.top {
     z-index: 0;
 }
 
+nav {
+    margin: 10px 10px 0px 10px;
+    width: 100%;
+}
+
+
+/* nav ul {
+        margin: 10px 10px 0px 10px;
+        list-style-type: none;
+        padding: 5px 0px 5px 0px;
+    }
+    
+    nav ul li {
+        display: inline;
+        padding: 5px 10px 5px 10px;
+    }
+    
+    nav ul li a:link,
+    nav ul li a:visited {
+        color: #954b4b;
+        border-bottom: none;
+        font-weight: bold;
+    }
+    
+    nav ul li.selected {
+        background-color: #c8b99c;
+    } */
+
+a.myLinks {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: radial-gradient(#740707, black);
+    border: 1px solid black;
+}
+
+a.myLinks:hover {
+    display: inline-block;
+    text-decoration: none;
+    color: #740707;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: white;
+    border: 1px solid #740707;
+}
+
+a.myLinks:active {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+    padding: 10px 10px;
+    background: #ffc7c7;
+}
+
 #coupon {
     position: fixed;
     top: 300px;
@@ -95,20 +153,38 @@ img {
     text-align: center;
     border-spacing: 10px;
     width: 100%;
+    margin-bottom: 0;
 }
 
 #tableRow {
     display: table-row;
 }
 
-.main,
-#blog {
+.main {
     display: table-cell;
     background-color: #ffc7c7;
     font-size: 105%;
     padding: 15px;
     vertical-align: top;
     width: 60%;
+}
+
+section#blog {
+    text-align: left;
+    display: table-cell;
+    font-size: 105%;
+    vertical-align: top;
+    width: 60%;
+}
+
+article {
+    background-color: #ffc7c7;
+    margin: 0 0 10px 0;
+    padding: 15px;
+}
+
+article#first-article {
+    margin: 0;
 }
 
 section#beverages {
@@ -153,87 +229,6 @@ aside {
     line-height: 1.8em;
 } */
 
-nav {
-    margin: 10px 10px 0px 10px;
-    text-align: center;
-}
-
-ul.about {
-    font-size: 115%;
-    text-align: left;
-}
-
-ul.also {
-    font-size: 100%;
-    font-style: oblique;
-}
-
-.ourHistory {
-    text-align: left;
-    text-indent: 4em;
-}
-
-ul.ourHistoryFacts,
-ol {
-    text-align: left;
-}
-
-#smoke {
-    color: black;
-    border-color: white;
-    border-width: 3px;
-    border-style: dashed;
-    background-color: #a7cece;
-    padding: 25px;
-    padding-left: 325px;
-    margin: 30px;
-    /* margin-right: 200px; */
-    background-image: url(images/png.png);
-    background-repeat: no-repeat;
-    background-position: top left;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 40px;
-    border-bottom-left-radius: 0px;
-}
-
-p.hideBlock {
-    font-size: 16px;
-    color: #777;
-    margin: 0 0 10px 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-a.myLinks {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    font-size: 130%;
-    padding: 10px 10px;
-    background: radial-gradient(#740707, black);
-    border: 1px solid black;
-}
-
-a.myLinks:hover {
-    display: inline-block;
-    text-decoration: none;
-    color: #740707;
-    font-size: 130%;
-    padding: 10px 10px;
-    background: white;
-    border: 1px solid #740707;
-}
-
-a.myLinks:active {
-    display: inline-block;
-    text-decoration: none;
-    color: white;
-    font-size: 130%;
-    padding: 10px 10px;
-    background: #ffc7c7;
-}
-
 .return-up {
     display: inline-block;
     position: relative;
@@ -269,6 +264,63 @@ a.myLinks:active {
     background: #ffc7c7;
 }
 
+ul.about {
+    font-size: 115%;
+    text-align: left;
+}
+
+ul.also {
+    font-size: 100%;
+    font-style: oblique;
+}
+
+.ourHistory {
+    text-align: left;
+    text-indent: 4em;
+}
+
+ul.ourHistoryFacts,
+ol {
+    text-align: left;
+}
+
+li {
+    list-style-type: square;
+    list-style-position: inside;
+    /*перенос будет не под маркером */
+}
+
+#smoke {
+    color: black;
+    border-color: white;
+    border-width: 3px;
+    border-style: dashed;
+    background-color: #a7cece;
+    padding: 25px;
+    padding-left: 325px;
+    margin: 30px;
+    /* margin-right: 200px; */
+    background-image: url(images/png.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 0px;
+}
+
+.img-blog {
+    text-align: center;
+}
+
+p.hideBlock {
+    font-size: 16px;
+    color: #777;
+    margin: 0 0 10px 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
 .content_toggle {
     display: inline-block;
     padding: 20px 100px;
@@ -298,7 +350,7 @@ footer {
     text-align: right;
     /* line-height: normal; */
     padding: 15px;
-    margin: 10px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
 }
 
 .music {
@@ -331,3 +383,122 @@ footer {
     color: #0d5353;
     background: #f88396;
 } */
+
+figure {
+    background: #740707;
+    /* Цвет фона */
+    padding: 10px 0px 10px 0;
+    /* Поля вокруг */
+    display: block;
+    /* Блочный элемент */
+    width: 100%;
+    /* Ширина */
+    margin: 0;
+    /* Отступы */
+    text-align: center;
+    /* Выравнивание по центру */
+}
+
+figcaption {
+    color: #fff;
+    /* Цвет текста */
+}
+
+@font-face {
+    font-family: "Emblema One";
+    src: url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.woff"), url("http://wickedlysmart.com/hfhtmlcss/chapter8/journal/EmblemaOne-Regular.ttf");
+}
+
+table {
+    margin: 0 20px 0 20px;
+    border: thin solid black;
+    caption-side: top;
+    border-spacing: 0px;
+    text-align: center;
+    /* border-collapse: collapse; */
+}
+
+td,
+th {
+    border: thin solid black;
+    padding: 5px;
+}
+
+th {
+    background-color: #6d1010;
+    color: white;
+}
+
+
+/* tr:nth-child(2n+1) {
+        background-color: #fcafaf;
+    }
+    
+    tr:nth-child(2n) {
+        background-color: #ffc7c7;
+    } */
+
+td:nth-child(odd) {
+    background-color: #fcafaf;
+}
+
+td:nth-child(even) {
+    background-color: #ffc7c7;
+}
+
+table table th,
+table table td {
+    background-color: #ffc7c7;
+    color: black;
+}
+
+.tobacco-align {
+    text-align: left;
+}
+
+caption {
+    font-style: italic;
+    padding: 5px 0 5px 0;
+}
+
+form {
+    text-align: center;
+    display: table;
+    padding: 10px;
+    border: thin solid black;
+}
+
+form textarea {
+    width: 400px;
+    height: 200px;
+}
+
+div.tableRow {
+    display: table-row;
+}
+
+div.tableRow p {
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+}
+
+div.tableRow p:first-child {
+    text-align: right;
+}
+
+div.tableRow p:last-child {
+    text-align: left;
+}
+
+p.heading {
+    font-weight: bold;
+}
+
+fieldset {
+    text-align: left;
+}
+
+fieldset legend {
+    text-align: center;
+}

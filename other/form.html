@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Наш блог</title>
+    <link type="text/css" rel="stylesheet" href="../index.css">
+    <!-- <link type="text/css" rel="stylesheet" href="../index2.css"> -->
+</head>
+
+<body>
+    <div id="allcontent">
+        <header class="top">
+            <span id="logo"><a id="return-up" href="../index.html"><img src="../images/bdr1.png" width="250" height="250" alt="logo"></a></span>
+            <span id="textlogo"><img src="../images/logo3.png" width="400" alt="textlogo"></span>
+        </header>
+        <nav>
+            <a class="myLinks" href="../index.html">Главная</a>
+            <a class="myLinks" href="offer.html">Акции</a>
+            <a class="myLinks" href="blog.html">Наш блог</a>
+            <a class="myLinks" href="about.html">О нас</a>
+            <a class="myLinks" href="mission.html">Наша миссия</a>
+            <a class="myLinks" href="history.html">История</a>
+            <a class="myLinks" href="contacts.html">Контакты</a>
+        </nav>
+        <div id="tableContainer">
+            <div id="tableRow">
+                <section id="beverages">
+                    <h2>Напитки</h2>
+
+                    <p>
+                        <img src="../images/coffee.jpg" width="250" alt="coffee">
+                    </p>
+                    <h3>Кофе - от 150₽</h3>
+                    <p>Американо, Капучино, Латте</p>
+
+                    <p>
+                        <img src="../images/tea.jpg" width="250" alt="tea">
+                    </p>
+                    <h3>Чай - от 100₽</h3>
+                    <p>Чёрный, зелёный, фруктовый</p>
+
+                    <p>
+                        <img src="../images/cola.jpg" width="250" alt="cola">
+                    </p>
+                    <h3>Газированные напитки - от 100₽</h3>
+                    <p>Coca-cola, Sprite, Fanta</p>
+                </section>
+                <section class="main">
+                    <h2>Заказать табак с доставкой</h2>
+                    <h3>Заполните следующую форму и нажмите кнопку "Заказать сейчас", чтобы оформить заказ</h3>
+                    <form action="http://starbuzzcoffee.com/processorder.php" method="GET">
+                        <div class="tableRow">
+                            <p><label for="tobacco">Выберите табак:</label></p>
+                            <p>
+                                <select id="tobacco" name="beans" multiple="multiple" required>
+                                <option value="Adalya">Adalya</option>
+                                <option value="Serbetli">Serbetli</option>
+                                <option value="Afzal">Afzal</option>
+                                <option value="Daily Hookah">Daily Hookah</option>
+                                <option value="Fumari">Fumari</option>
+                                <option value="Dark Side">Dark Side</option>
+                                <option value="Element">Element</option>
+                                <option value="Tangiers">Tangiers</option>
+                                <option value="Северный">Северный</option>
+                            </select>
+                            </p>
+                        </div>
+                        <div class="tableRow">
+                            <p>Мундштуки:</p>
+                            <p>
+                                <label><input type="radio" name="beantype" value="yes" checked>Да</label><br>
+                                <label><input type="radio" name="beantype" value="no">Нет</label>
+                            </p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="bags">Количество пачек:</label></p>
+                            <p><input type="number" id="bags" name="bags" min="1" max="100" required placeholder="1"></p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="date">Дата доставки:</label></p>
+                            <p><input type="date" id="date" name="date" required></p>
+                        </div>
+                        <div class="tableRow">
+                            <p>Дополнительно:</p>
+                            <fieldset>
+                                <legend>Выберите:</legend>
+
+                                <label><input type="checkbox" name="extras[]" value="coals">Угли (24шт.)</label><br>
+                                <label><input type="checkbox" name="extras[]" value="water">Вода 5л.</label><br>
+                                <label><input type="checkbox" name="extras[]" value="paper-towels">Бумажные полотенца</label><br>
+                                <label><input type="checkbox" name="extras[]" value="package" checked="checked">Пакет</label>
+                            </fieldset>
+                        </div>
+                        <div class="tableRow">
+                            <p></p>
+                            <p class="heading">
+                                Кому и куда доставляем:
+                            </p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="username">Ваше имя:</label></p>
+                            <p><input type="text" name="name" id="username" value="" placeholder="Как Вас зовут?" required></p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="country">Страна:</label></p>
+                            <p><input type="text" name="state" id="country" value="" placeholder="В какую страну?"></p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="city">Город:</label></p>
+                            <p> <input type="text" name="city" id="city" value="" placeholder="В какой город?" required></p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="zip">Индекс</label></p>
+                            <p><input type="text" id="zip" name="zip" value="" placeholder="Номер отделения"></p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="address">Адрес:</label></p>
+                            <p><input type="text" name="address" id="address" value="" placeholder="Улица, дом"></p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="phone">Телефон:</label></p>
+                            <p><input type="tel" name="phone" id="phone" value="" placeholder="Номер мобильного" required></p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="email">Электронная почта:</label></p>
+                            <p><input type="email" name="email" id="email" value="" placeholder="example@example.ru" required></p>
+                        </div>
+                        <div class="tableRow">
+                            <p><label for="password">PIN-код Вашей карты:</label></p>
+                            <p><input type="password" name="password" id="password" value=""></p>
+                        </div>
+
+                        <div class="tableRow">
+
+                            <p><label for="comments">Комментарии:</label></p>
+                            <p><textarea name="comments" id="comments" placeholder="Напишите комментарии к заказу"></textarea></p>
+                        </div>
+                        <div class="tableRow">
+                            <p>Загрузите скан паспорта:</p>
+                            <p>
+                                <input type="file" name="doc">
+                            </p>
+                        </div>
+                        <div class="tableRow">
+                            <p></p>
+                            <p>
+                                <input type="submit" value="Заказать сейчас">
+                            </p>
+                        </div>
+                    </form>
+                    <!-- <form action="http://starbuzzcoffee.com/processorder.php" method="POST">
+                        <p>
+                            Выберите табак:
+                            <select name="tobacco">
+                                <option value="Adalya">Adalya</option>
+                                <option value="Serbetli">Serbetli</option>
+                                <option value="Afzal">Afzal</option>
+                                <option value="Daily Hookah">Daily Hookah</option>
+                                <option value="Fumari">Fumari</option>
+                                <option value="Dark Side">Dark Side</option>
+                                <option value="Element">Element</option>
+                                <option value="Tangiers">Tangiers</option>
+                                <option value="Северный">Северный</option>
+                            </select>
+                        </p>
+                        <p>
+                            Мундштуки:<br>
+                            <input type="radio" name="mouthpiece" value="yes">Да<br>
+                            <input type="radio" name="mouthpiece" value="no">Нет<br>
+                        </p>
+                        <p>
+                            Количество пачек: <input type="number" name="pack" min="1" max="100">
+                        </p>
+                        <p>
+                            Дата доставки: <input type="date" name="date">
+                        </p>
+                        <p>
+                            Кому и куда доставляем:<br> Ваше имя: <input type="text" name="first-name" value=""><br> Ваша фамилия: <input type="text" name="last-name" value=""><br> Страна: <input type="text" name="country" value=""><br> Город:
+                            <input type="text" name="city" value=""><br> Адрес: <input type="text" name="address" value=""><br> Телефон: <input type="tel" name="phone" value=""><br>
+                        </p>
+                        <p>
+                            <input type="submit" value="Заказать сейчас">
+                        </p>
+                    </form> -->
+                </section>
+                <aside>
+                    <h2>Наши акции</h2>
+
+                    <p>
+                        <a href="offer.html"><img src="../images/bday.jpg" width="250" alt="Bday hookah"></a>
+                    </p>
+                    <h3>Получи бесплатный кальян на свой День рождения!</h3>
+                    <p>Отпразднуй свой День рождения в домашней атмосфере клуба-кальянной BenzoDoctoR! Предъяви паспорт с датой рождения и получи в подарок свой бесплатный кальян!</p>
+
+                </aside>
+            </div>
+        </div>
+        <footer>
+            <p>
+                <a href="../index.html"><img src="../images/bdr1.png" width="50" height="50" alt="BenzoDoctoR group"></a>
+            </p>
+            <small>
+                &copy; 2020, Вертели твои права на нашей бензопиле (с) команда BenzoDoctoR
+            </small>
+        </footer>
+    </div>
+</body>
+
+</html>
