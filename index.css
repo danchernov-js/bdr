@@ -81,8 +81,8 @@ header.top {
 }
 
 nav {
-    margin: 10px 10px 0px 10px;
-    width: 100%;
+    margin: 20px 10px 10px 10px;
+    display: block;
 }
 
 
@@ -109,7 +109,6 @@ nav {
     } */
 
 a.myLinks {
-    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 130%;
@@ -119,7 +118,6 @@ a.myLinks {
 }
 
 a.myLinks:hover {
-    display: inline-block;
     text-decoration: none;
     color: #740707;
     font-size: 130%;
@@ -129,7 +127,6 @@ a.myLinks:hover {
 }
 
 a.myLinks:active {
-    display: inline-block;
     text-decoration: none;
     color: white;
     font-size: 130%;
@@ -229,10 +226,12 @@ aside {
     line-height: 1.8em;
 } */
 
-.return-up {
-    display: inline-block;
+#return-up-a {
     position: relative;
-    bottom: 10px;
+    bottom: 80px;
+}
+
+.return-up {
     text-decoration: none;
     color: white;
     font-size: 130%;
@@ -242,9 +241,6 @@ aside {
 }
 
 .return-up:hover {
-    display: inline-block;
-    position: relative;
-    bottom: 10px;
     text-decoration: none;
     color: #740707;
     font-size: 130%;
@@ -254,9 +250,6 @@ aside {
 }
 
 .return-up:active {
-    display: inline-block;
-    position: relative;
-    bottom: 10px;
     text-decoration: none;
     color: white;
     font-size: 130%;
