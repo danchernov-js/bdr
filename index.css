@@ -502,3 +502,46 @@ fieldset {
 fieldset legend {
     text-align: center;
 }
+
+#blog p:first-letter {
+    font-size: 1.5em;
+}
+
+#blog p:first-line {
+    font-style: oblique;
+}
+
+img[width="500"] {
+    border: 3px solid black;
+    transition: transform 1s;
+}
+
+img[width="500"]:hover {
+    transform: scale(1.01, 1.01);
+}
+
+h2+time {
+    font-style: italic;
+}
+
+section.main>blockquote p:first-child {
+    font-family: fantasy;
+    font-weight: bold;
+}
+
+
+/*#box {
+    position: absolute;
+    top: 500px;
+    left: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+#box:hover {
+    transform: translate(100px, 50px) rotate(20deg);
+    transform: matrix(1, 2, 3, 4, 5, 6);
+    transform: scale(2, 0.5);
+    transform: skew(30deg, 20deg);
+} */
