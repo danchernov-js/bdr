@@ -1,231 +1,278 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Наш блог</title>
-    <link type="text/css" rel="stylesheet" href="../index.css">
+    <link type="text/css" rel="stylesheet" href="../index.css" />
     <!-- <link type="text/css" rel="stylesheet" href="../index2.css"> -->
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="allcontent">
-        <header class="top">
-            <span id="logo"><a id="return-up" href="../index.html"><img src="../images/bdr1.png" width="250" height="250" alt="logo"></a></span>
-            <span id="textlogo"><img src="../images/logo3.png" width="400" alt="textlogo"></span>
-        </header>
-        <nav>
-            <a class="myLinks" href="../index.html">Главная</a>
-            <a class="myLinks" href="offer.html">Акции</a>
-            <a class="myLinks" href="blog.html">Наш блог</a>
-            <a class="myLinks" href="about.html">О нас</a>
-            <a class="myLinks" href="mission.html">Наша миссия</a>
-            <a class="myLinks" href="history.html">История</a>
-            <a class="myLinks" href="contacts.html">Контакты</a>
-        </nav>
-        <div id="tableContainer">
-            <div id="tableRow">
-                <section id="beverages">
-                    <h2>Напитки</h2>
+      <header class="top">
+        <span id="logo"
+          ><a id="return-up" href="../index.html"
+            ><img
+              src="../images/bdr1.png"
+              width="250"
+              height="250"
+              alt="logo" /></a
+        ></span>
+        <span id="textlogo"
+          ><img src="../images/logo3.png" width="400" alt="textlogo"
+        /></span>
+      </header>
+      <nav>
+        <a class="myLinks" href="../index.html">Главная</a>
+        <a class="myLinks" href="offer.html">Акции</a>
+        <a class="myLinks" href="blog.html">Наш блог</a>
+        <!-- <a class="myLinks" href="about.html">О нас</a>
+        <a class="myLinks" href="mission.html">Наша миссия</a> -->
+        <a class="myLinks" href="history.html">История</a>
+        <a class="myLinks" href="contacts.html">Контакты</a>
+      </nav>
+      <div class="container">
+        <section id="beverages">
+          <h2>Напитки</h2>
 
-                    <p>
-                        <img src="../images/coffee.jpg" width="250" alt="coffee">
-                    </p>
-                    <h3>Кофе - от 150₽</h3>
-                    <p>Американо, Капучино, Латте</p>
+          <p>
+            <img src="../images/coffee.jpg" width="250" alt="coffee" />
+          </p>
+          <h3>Кофе - от 150₽</h3>
+          <p>Американо, Капучино, Латте</p>
 
-                    <p>
-                        <img src="../images/tea.jpg" width="250" alt="tea">
-                    </p>
-                    <h3>Чай - от 100₽</h3>
-                    <p>Чёрный, зелёный, фруктовый</p>
+          <p>
+            <img src="../images/tea.jpg" width="250" alt="tea" />
+          </p>
+          <h3>Чай - от 100₽</h3>
+          <p>Чёрный, зелёный, фруктовый</p>
 
-                    <p>
-                        <img src="../images/cola.jpg" width="250" alt="cola">
-                    </p>
-                    <h3>Газированные напитки - от 100₽</h3>
-                    <p>Coca-cola, Sprite, Fanta</p>
-                </section>
-                <section id="blog">
-                    <article>
-                        <header>
-                            <h2>С 1 октрября открываем продажу табаков!</h2>
-                            <time datetime="2020-09-07">7 сентября 2020 г.</time>
-                        </header>
-                        <p class="img-blog">
-                            <a href="form.html"><img src="../images/tobacco.jpg" width="500" alt="Табаки в продаже"></a>
-                        </p>
-                        <p>
-                            Как и все, мы стараемся адаптироваться под эпидемиологическую ситацию в стране! Открываем свой магазин продажа табака с доставкой от 1500₽!
-                        </p>
-                        <details>
-                            <summary>Показать
-                                <ruby>прайс<rt>весь</rt></ruby></summary>
-                            <table summary="Прайс">
-                                <caption>Стартовый прайс на табаки</caption>
-                                <tr>
-                                    <th>Табак</th>
-                                    <th>Крепость</th>
-                                    <th>Дымность</th>
-                                    <th>Граммовка</th>
-                                    <th>Цена</th>
-                                </tr>
-                                <tr>
-                                    <td class="tobacco-align">Adalya</td>
-                                    <td rowspan="3">Легкая</td>
-                                    <td rowspan="3">Средняя</td>
-                                    <td rowspan="3">50г</td>
-                                    <td rowspan="3">199₽</td>
-                                </tr>
-                                <tr>
-                                    <td class="tobacco-align">Serbetli</td>
-
-                                </tr>
-                                <tr>
-                                    <td class="tobacco-align">Afzal</td>
-
-                                </tr>
-                                <tr>
-                                    <td rowspan="2" class="tobacco-align">Daily Hookah</td>
-                                    <td rowspan="2">Средняя</td>
-                                    <td rowspan="2">Средняя</td>
-                                    <td>60г</td>
-                                    <td>290₽</td>
-                                </tr>
-                                <tr>
-                                    <td>250г</td>
-                                    <td>1190₽</td>
-                                </tr>
-                                <tr>
-                                    <td class="tobacco-align">Fumari</td>
-                                    <td>Легкая</td>
-                                    <td>Дымный</td>
-                                    <td>100г</td>
-                                    <td>770₽</td>
-                                </tr>
-                                <tr>
-                                    <td class="tobacco-align">Dark Side</td>
-                                    <td>Выше среднего</td>
-                                    <td>Дымный</td>
-                                    <td>100г/250г</td>
-                                    <td>
-                                        <table>
-                                            <tr>
-                                                <th>до 31.10</th>
-                                                <td>699₽</td>
-                                            </tr>
-                                            <tr>
-                                                <th>с 01.11</th>
-                                                <td>1975₽</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="tobacco-align">Element</td>
-                                    <td>Выше среднего</td>
-                                    <td>Дымный</td>
-                                    <td>40г/1000г</td>
-                                    <td>255₽/630₽</td>
-                                </tr>
-                                <tr>
-                                    <td class="tobacco-align">Tangiers</td>
-                                    <td>Крепкий</td>
-                                    <td>Средняя</td>
-                                    <td>100г/250г</td>
-                                    <td>1200₽/2300₽</td>
-                                </tr>
-                                <tr>
-                                    <td class="tobacco-align">Северный</td>
-                                    <td>Выше среднего</td>
-                                    <td>Дымный</td>
-                                    <td>100г</td>
-                                    <td>630₽</td>
-                                </tr>
-                            </table>
-                        </details>
-                        <p>
-                            Заказать табак онлайн можно <a href="form.html">по этой ссылке</a>
-                        </p>
-                        <div id="box">
-
-                        </div>
-
-                    </article>
-                    <article>
-                        <header>
-                            <h2>Поступление новой партии табака Darkside</h2>
-                            <time datetime="2020-09-03">3 сентября 2020 г.</time>
-                        </header>
-                        <p class="img-blog">
-                            <img src="../images/darkside.jpg" width="500" alt="Darkside">
-                        </p>
-                        <p>
-                            Вы долго ждали! И это случилось!
-                        </p>
-                        <p>
-                            Табак <mark>Needls (Елка)</mark> снова есть в клубе-кальянной BDR! Успевай <a href="contacts.html">бронировать столик!</a>
-                        </p>
-                        <!-- <canvas></canvas> -->
-                        <progress max="100" value="75">
-                            Загружено на <span id="value">25</span>%
-                        </progress><br>
-                        <meter value="70" max="100" low="10" high="60">hot</meter><br>
-                        <object>
-                            <embed width="300" height="300">
-                                <audio controls src="../images/Lolly Bomb.mp3" width="100%"></audio>
-                        </object>
-
-                        <video controls src="../images/intro.mp4" width="100%"></video>
-                    </article>
-                    <article id="first-article">
-                        <header>
-                            <h2>Команда BDR в ночном авто-квесте DozoR</h2>
-                            <time datetime="2018-03-10">10 марта 2018 г.</time>
-                        </header>
-                        <figure>
-                            <p class="img-blog">
-                                <img src="../images/dozor1.jpg" width="500" alt="Команда для игры в DozoR">
-                            </p>
-                            <figcaption>Празднование годовщины команды!</figcaption>
-                        </figure>
-                        <p>
-                            Как вы знаете, наша команда изначально создавалась для игры в ночной авто-квест DozoR! Но что же это такое? DozoR?
-                        </p>
-                        <p>
-                            Традиционный DozoR – это выносящий мозг и вбрасывающий адреналин гибрид Зарницы, Форт Байярд-а и Что? Где? Когда?. Команды, состоящие из штаба и нескольких экипажей, снаряженные фонарями, ноутбуками, мобильной Internet - связью, с десяти вечера субботы
-                            до семи утра соревнуются – кто же быстрее разгадает место в городе, зашифрованное в загадках, которые они получают по Internet, доберется туда на машине и найдет в этой локации заветный код, дающий право перейти на следующий
-                            уровень игры. Цель игры: пройти 10 уровней, отгадав загадки-головоломки и найти зашифрованные коды, которые могут находиться где угодно: от подъезда жилого дома, в который еще надо попасть, до разрушенных зданий, сараев. Игроки
-                            не знают, куда их может занести попутный ветер. Победу одерживает та команда, которая выполняет все задание быстрее всех.
-                        </p>
-                        <p>
-                            Хочешь присоедениться? Отлично, ты можешь войти в состав нашей команды! Для этого тебе всего лишь нужно написать в директ командного инстаграма <a href="http://www.instagram.com/benzodoctor" target="_blank">по этой ссылке</a>!
-                        </p>
-                    </article>
-                </section>
-                <aside>
-                    <h2>Наши акции</h2>
-
-                    <p>
-                        <a href="offer.html"><img src="../images/bday.jpg" width="250" alt="Bday hookah"></a>
-                    </p>
-                    <h3>Получи бесплатный кальян на свой День рождения!</h3>
-                    <p>Отпразднуй свой День рождения в домашней атмосфере клуба-кальянной BenzoDoctoR! Предъяви паспорт с датой рождения и получи в подарок свой бесплатный кальян!</p>
-
-                </aside>
-            </div>
-        </div>
-        <span id="return-up-a"><a class="return-up" href="#return-up">Вернуться наверх</a></span>
-
-        <footer>
-            <p>
-                <a href="../index.html"><img src="../images/bdr1.png" width="50" height="50" alt="BenzoDoctoR group"></a>
+          <p>
+            <img src="../images/cola.jpg" width="250" alt="cola" />
+          </p>
+          <h3>Газированные напитки - от 100₽</h3>
+          <p>Coca-cola, Sprite, Fanta</p>
+        </section>
+        <section id="blog">
+          <article>
+            <header>
+              <h2>С 1 октрября открываем продажу табаков!</h2>
+              <time datetime="2020-09-07">7 сентября 2020 г.</time>
+            </header>
+            <p class="img-blog">
+              <a href="form.html"
+                ><img
+                  src="../images/tobacco.jpg"
+                  width="500"
+                  alt="Табаки в продаже"
+              /></a>
             </p>
-            <small>
-                &copy; 2020, Вертели твои права на нашей бензопиле (с) команда BenzoDoctoR
-            </small>
-        </footer>
-    </div>
-</body>
+            <p>
+              Как и все, мы стараемся адаптироваться под эпидемиологическую
+              ситацию в стране! Открываем свой магазин продажа табака с
+              доставкой от 1500₽!
+            </p>
+            <details>
+              <summary>
+                Показать <ruby>прайс<rt>весь</rt></ruby>
+              </summary>
+              <table summary="Прайс">
+                <caption>
+                  Стартовый прайс на табаки
+                </caption>
+                <tr>
+                  <th>Табак</th>
+                  <th>Крепость</th>
+                  <th>Дымность</th>
+                  <th>Граммовка</th>
+                  <th>Цена</th>
+                </tr>
+                <tr>
+                  <td class="tobacco-align">Adalya</td>
+                  <td rowspan="3">Легкая</td>
+                  <td rowspan="3">Средняя</td>
+                  <td rowspan="3">50г</td>
+                  <td rowspan="3">199₽</td>
+                </tr>
+                <tr>
+                  <td class="tobacco-align">Serbetli</td>
+                </tr>
+                <tr>
+                  <td class="tobacco-align">Afzal</td>
+                </tr>
+                <tr>
+                  <td rowspan="2" class="tobacco-align">Daily Hookah</td>
+                  <td rowspan="2">Средняя</td>
+                  <td rowspan="2">Средняя</td>
+                  <td>60г</td>
+                  <td>290₽</td>
+                </tr>
+                <tr>
+                  <td>250г</td>
+                  <td>1190₽</td>
+                </tr>
+                <tr>
+                  <td class="tobacco-align">Fumari</td>
+                  <td>Легкая</td>
+                  <td>Дымный</td>
+                  <td>100г</td>
+                  <td>770₽</td>
+                </tr>
+                <tr>
+                  <td class="tobacco-align">Dark Side</td>
+                  <td>Выше среднего</td>
+                  <td>Дымный</td>
+                  <td>100г/250г</td>
+                  <td>
+                    <table>
+                      <tr>
+                        <th>до 31.10</th>
+                        <td>699₽</td>
+                      </tr>
+                      <tr>
+                        <th>с 01.11</th>
+                        <td>1975₽</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="tobacco-align">Element</td>
+                  <td>Выше среднего</td>
+                  <td>Дымный</td>
+                  <td>40г/1000г</td>
+                  <td>255₽/630₽</td>
+                </tr>
+                <tr>
+                  <td class="tobacco-align">Tangiers</td>
+                  <td>Крепкий</td>
+                  <td>Средняя</td>
+                  <td>100г/250г</td>
+                  <td>1200₽/2300₽</td>
+                </tr>
+                <tr>
+                  <td class="tobacco-align">Северный</td>
+                  <td>Выше среднего</td>
+                  <td>Дымный</td>
+                  <td>100г</td>
+                  <td>630₽</td>
+                </tr>
+              </table>
+            </details>
+            <p>
+              Заказать табак онлайн можно <a href="form.html">по этой ссылке</a>
+            </p>
+            <div id="box"></div>
+          </article>
+          <article>
+            <header>
+              <h2>Поступление новой партии табака Darkside</h2>
+              <time datetime="2020-09-03">3 сентября 2020 г.</time>
+            </header>
+            <p class="img-blog">
+              <img src="../images/darkside.jpg" width="500" alt="Darkside" />
+            </p>
+            <p>Вы долго ждали! И это случилось!</p>
+            <p>
+              Табак <mark>Needls (Елка)</mark> снова есть в клубе-кальянной BDR!
+              Успевай <a href="contacts.html">бронировать столик!</a>
+            </p>
+            <!-- <canvas></canvas> -->
+            <progress max="100" value="75">
+              Загружено на <span id="value">25</span>%</progress
+            ><br />
+            <meter value="70" max="100" low="10" high="60">hot</meter><br />
+            <object>
+              <embed width="300" height="300" />
+              <audio
+                controls
+                src="../images/Lolly Bomb.mp3"
+                width="100%"
+              ></audio>
+            </object>
 
+            <video controls src="../images/intro.mp4" width="100%"></video>
+          </article>
+          <article id="first-article">
+            <header>
+              <h2>Команда BDR в ночном авто-квесте DozoR</h2>
+              <time datetime="2018-03-10">10 марта 2018 г.</time>
+            </header>
+            <figure>
+              <p class="img-blog">
+                <img
+                  src="../images/dozor1.jpg"
+                  width="500"
+                  alt="Команда для игры в DozoR"
+                />
+              </p>
+              <figcaption>Празднование годовщины команды!</figcaption>
+            </figure>
+            <p>
+              Как вы знаете, наша команда изначально создавалась для игры в
+              ночной авто-квест DozoR! Но что же это такое? DozoR?
+            </p>
+            <p>
+              Традиционный DozoR – это выносящий мозг и вбрасывающий адреналин
+              гибрид Зарницы, Форт Байярд-а и Что? Где? Когда?. Команды,
+              состоящие из штаба и нескольких экипажей, снаряженные фонарями,
+              ноутбуками, мобильной Internet - связью, с десяти вечера субботы
+              до семи утра соревнуются – кто же быстрее разгадает место в
+              городе, зашифрованное в загадках, которые они получают по
+              Internet, доберется туда на машине и найдет в этой локации
+              заветный код, дающий право перейти на следующий уровень игры. Цель
+              игры: пройти 10 уровней, отгадав загадки-головоломки и найти
+              зашифрованные коды, которые могут находиться где угодно: от
+              подъезда жилого дома, в который еще надо попасть, до разрушенных
+              зданий, сараев. Игроки не знают, куда их может занести попутный
+              ветер. Победу одерживает та команда, которая выполняет все задание
+              быстрее всех.
+            </p>
+            <p>
+              Хочешь присоедениться? Отлично, ты можешь войти в состав нашей
+              команды! Для этого тебе всего лишь нужно написать в директ
+              командного инстаграма
+              <a href="http://www.instagram.com/benzodoctor" target="_blank"
+                >по этой ссылке</a
+              >!
+            </p>
+          </article>
+        </section>
+        <aside>
+          <h2>Наши акции</h2>
+
+          <p>
+            <a href="offer.html"
+              ><img src="../images/bday.jpg" width="250" alt="Bday hookah"
+            /></a>
+          </p>
+          <h3>Получи бесплатный кальян на свой День рождения!</h3>
+          <p>
+            Отпразднуй свой День рождения в домашней атмосфере клуба-кальянной
+            BenzoDoctoR! Предъяви паспорт с датой рождения и получи в подарок
+            свой бесплатный кальян!
+          </p>
+        </aside>
+      </div>
+      <span id="return-up-a"
+        ><a class="return-up" href="#return-up">Вернуться наверх</a></span
+      >
+
+      <footer>
+        <p>
+          <a href="../index.html"
+            ><img
+              src="../images/bdr1.png"
+              width="50"
+              height="50"
+              alt="BenzoDoctoR group"
+          /></a>
+        </p>
+        <small>
+          &copy; 2020, Вертели твои права на нашей бензопиле (с) команда
+          BenzoDoctoR
+        </small>
+      </footer>
+    </div>
+  </body>
 </html>
