@@ -64,10 +64,7 @@ header.top {
 } */
 
 #logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  z-index: 1;
+  text-align: left;
 }
 
 #textlogo {
@@ -79,7 +76,15 @@ header.top {
 
 nav {
   margin: 20px 10px 10px 10px;
-  display: block;
+  display: flex;
+  align-items: stretch;
+  justify-content: ;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 5px 0 0;
 }
 
 /* nav ul {
@@ -152,50 +157,70 @@ img {
 #tableRow {
     display: table-row;
 } */
-@media (min-width: 605px) {
-  .container {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-  }
-
-  .container section#beverages,
-  .container aside {
-    flex-basis: 20%;
-  }
-
-  .container section,
-  .container aside {
-    margin: 10px;
-  }
-  .container section.main {
-    flex-basis: 60%;
-  }
+/* @media (min-width: 855px)  */
+.container {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
 }
 
-@media (max-width: 604px) {
+.container section#beverages,
+.container aside {
+  flex-basis: 20%;
+}
+
+.container section,
+.container aside {
+  margin: 10px;
+}
+.container section.main {
+ margin: 10px 0;
+}
+.container section.main {
+  flex-basis: 60%;
+}
+
+@media (max-width: 854px) {
+  #logo {
+    text-align: center;
+  }
+
+  #textlogo {
+    display: none;
+  }
+
+  nav {
+    margin: 20px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav a {
+    margin: 0 0 5px 0;
+  }
+
   .container {
     display: flex;
     align-items: stretch;
     flex-direction: column;
   }
 
-  .container section#beverages,
-  .container aside {
-    flex-basis: 100%;
+  .container section.main {
+    margin: 10px 10px;
+    order: 1;
   }
 
-  .container section,
-  .container aside {
-    margin: 10px;
+  .container section.main p img {
+    width: 100%;
   }
-  .container section.main {
-    flex-basis: 100%;
+
+  #beverages, aside {
+    order: 2;
   }
 }
+
 section.main {
   /* flex: 3; */
-  margin: 10px 0;
   background-color: #ffc7c7;
   font-size: 105%;
   padding: 15px;
