@@ -78,7 +78,6 @@ nav {
   margin: 20px 10px 10px 10px;
   display: flex;
   align-items: stretch;
-  justify-content: ;
   flex-direction: row;
   justify-content: center;
 }
@@ -158,29 +157,46 @@ img {
     display: table-row;
 } */
 /* @media (min-width: 855px)  */
+
+/* начинаю флекс, медиа будут ниже чтобы не нарушать приоритетность выполнения */
 .container {
   display: flex;
   align-items: stretch;
   flex-direction: row;
 }
 
+/* 2 следующих свойства чтобы создать красивые небольшие расстояния между блоками и задать флекс + перенес сюда и их оформление*/
 .container section#beverages,
-.container aside {
-  flex-basis: 20%;
-}
-
-.container section,
-.container aside {
+.container aside, 
+#offer-bday,
+#offer-freecoffee {
   margin: 10px;
+  flex: 1;
+  background-color: #ffc7c7;
+  padding: 10px;
+  vertical-align: top;
 }
-.container section.main {
- margin: 10px 0;
+/* для главного блока или для блога отдельно с нулевыми боками чтобы они не объеденялись с полями боковых блоков */
+.container section.main,
+.container section#blog {
+  margin: 10px 0;
+  flex: 2;
 }
-.container section.main {
-  flex-basis: 60%;
+/* ниже просто оформления главных блоков */
+section.main {
+  background-color: #ffc7c7;
+  padding: 10px;
+  vertical-align: top;
 }
 
-@media (max-width: 854px) {
+section#blog {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  vertical-align: top;
+}
+
+@media (max-width: 874px) {
   #logo {
     text-align: center;
   }
@@ -198,14 +214,14 @@ img {
   nav a {
     margin: 0 0 5px 0;
   }
-
   .container {
     display: flex;
     align-items: stretch;
     flex-direction: column;
   }
 
-  .container section.main {
+  .container section.main,
+  .container section#blog {
     margin: 10px 10px;
     order: 1;
   }
@@ -214,42 +230,21 @@ img {
     width: 100%;
   }
 
-  #beverages, aside {
+  #beverages,
+  aside {
     order: 2;
   }
 }
 
-section.main {
-  /* flex: 3; */
-  background-color: #ffc7c7;
-  font-size: 105%;
-  padding: 15px;
-  vertical-align: top;
-}
+@media (min-width: 875px) and (max-width: 1175px) {
+  .container {
+    flex-flow: row wrap;
+  }
 
-section#blog {
-  /* flex: 3; */
-  margin: 10px 0;
-  text-align: left;
-  font-size: 105%;
-  vertical-align: top;
-  flex-basis: 60%;
-}
-
-section#beverages {
-  /* flex: 1; */
-  background-color: #ffc7c7;
-  font-size: 105%;
-  padding: 15px;
-  vertical-align: top;
-}
-
-aside {
-  /* flex: 1; */
-  background-color: #ffc7c7;
-  font-size: 105%;
-  padding: 15px;
-  vertical-align: top;
+  .container section.main,
+  .container section#blog {
+    margin: 10px 10px;
+  }
 }
 
 article {
@@ -262,21 +257,6 @@ article#first-article {
   margin: 0;
 }
 
-#offer-bday {
-  flex: 1;
-  background-color: #ffc7c7;
-  font-size: 105%;
-  padding: 15px;
-  vertical-align: top;
-}
-
-#offer-freecoffee {
-  display: table-cell;
-  background-color: #ffc7c7;
-  font-size: 105%;
-  padding: 15px;
-  vertical-align: top;
-}
 
 /* .slogan {
     color: #954b4b;
