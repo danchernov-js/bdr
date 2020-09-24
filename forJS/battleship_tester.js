@@ -1,3 +1,43 @@
+// To use this tester file, you'll need to leave the view, model, controller
+// objects in place, but comment out all the testing code except the parts
+// you're using.  Remember you can use 
+/* 
+   code here 
+*/
+// to comment out large chunks of code.
+
+
+// testing the view
+var view = {
+	displayMessage: function(msg) {
+		var messageArea = document.getElementById("messageArea");
+		messageArea.innerHTML = msg;
+	},
+
+	displayHit: function(location) {
+		var cell = document.getElementById(location);
+		cell.setAttribute("class", "hit");
+	},
+
+	displayMiss: function(location) {
+		var cell = document.getElementById(location);
+		cell.setAttribute("class", "miss");
+	}
+
+}; 
+
+view.displayMiss("00");
+view.displayHit("34");
+view.displayMiss("55");
+view.displayHit("12");
+view.displayMiss("25");
+view.displayHit("26");
+
+view.displayMessage("Tap tap, is this thing on?");
+
+// testing the model
+
+
 var model = {
 	boardSize: 7,
 	numShips: 3,
@@ -5,31 +45,17 @@ var model = {
 	shipsSunk: 0,
 	
 	ships: [
-		{ locations: [0, 0, 0], hits: ["", "", ""] },
-		{ locations: [0, 0, 0], hits: ["", "", ""] },
-		{ locations: [0, 0, 0], hits: ["", "", ""] }
-	],
-
-// original hard-coded values for ship locations
-/*
-	ships: [
 		{ locations: ["06", "16", "26"], hits: ["", "", ""] },
 		{ locations: ["24", "34", "44"], hits: ["", "", ""] },
 		{ locations: ["10", "11", "12"], hits: ["", "", ""] }
 	],
-*/
 
 	fire: function(guess) {
 		for (var i = 0; i < this.numShips; i++) {
 			var ship = this.ships[i];
 			var index = ship.locations.indexOf(guess);
 
-			// here's an improvement! Check to see if the ship
-			// has already been hit, message the user, and return true.
-			if (ship.hits[index] === "hit") {
-				view.displayMessage("Oops, you already hit that location!");
-				return true;
-			} else if (index >= 0) {
+			if (index >= 0) {
 				ship.hits[index] = "hit";
 				view.displayHit(guess);
 				view.displayMessage("HIT!");
@@ -104,24 +130,55 @@ var model = {
 	
 }; 
 
+/*
+model.fire("53"); // miss
 
-var view = {
-	displayMessage: function(msg) {
-		var messageArea = document.getElementById("messageArea");
-		messageArea.innerHTML = msg;
-	},
+model.fire("06"); // hit
+model.fire("16"); // hit
+model.fire("26"); // hit
 
-	displayHit: function(location) {
-		var cell = document.getElementById(location);
-		cell.setAttribute("class", "hit");
-	},
+model.fire("34"); // hit
+model.fire("24"); // hit
+model.fire("44"); // hit
 
-	displayMiss: function(location) {
-		var cell = document.getElementById(location);
-		cell.setAttribute("class", "miss");
+model.fire("12"); // hit
+model.fire("11"); // hit
+model.fire("10"); // hit
+*/
+
+
+// testing parseGuess
+function parseGuess(guess) {
+	var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
+
+	if (guess === null || guess.length !== 2) {
+		alert("Oops, please enter a letter and a number on the board.");
+	} else {
+		var row = alphabet.indexOf(guess.charAt(0));
+		var column = guess.charAt(1);
+		
+		if (isNaN(row) || isNaN(column)) {
+			alert("Oops, that isn't on the board.");
+		} else if (row < 0 || row >= model.boardSize ||
+		           column < 0 || column >= model.boardSize) {
+			alert("Oops, that's off the board!");
+		} else {
+			return row + column;
+		}
 	}
+	return null;
+}
 
-}; 
+/*
+console.log("Testing parseGuess");
+console.log(parseGuess("A0"));
+console.log(parseGuess("B6"));
+console.log(parseGuess("G3"));
+console.log(parseGuess("H0")); // invalid
+console.log(parseGuess("A7")); // invalid
+*/
+
+// testing the controller
 
 var controller = {
 	guesses: 0,
@@ -139,74 +196,21 @@ var controller = {
 }
 
 
-// helper function to parse a guess from the user
+// You should see three ships on the board, one miss, and the message
+// "You sank all my battleships in 10 guesses"
+/*
+controller.processGuess("A0"); // miss
 
-function parseGuess(guess) {
-	var alphabet = ["A", "B", "C", "D", "E", "F", "G"];
+controller.processGuess("A6"); // hit
+controller.processGuess("B6"); // hit
+controller.processGuess("C6"); // hit
 
-	if (guess === null || guess.length !== 2) {
-		alert("Oops, please enter a letter and a number on the board.");
-	} else {
-		var firstChar = guess.charAt(0);
-		var row = alphabet.indexOf(firstChar);
-		var column = guess.charAt(1);
-		
-		if (isNaN(row) || isNaN(column)) {
-			alert("Oops, that isn't on the board.");
-		} else if (row < 0 || row >= model.boardSize ||
-		           column < 0 || column >= model.boardSize) {
-			alert("Oops, that's off the board!");
-		} else {
-			return row + column;
-		}
-	}
-	return null;
-}
+controller.processGuess("C4"); // hit
+controller.processGuess("D4"); // hit
+controller.processGuess("E4"); // hit
 
-
-// event handlers
-
-function handleFireButton() {
-	var guessInput = document.getElementById("guessInput");
-	var guess = guessInput.value.toUpperCase();
-
-	controller.processGuess(guess);
-
-	guessInput.value = "";
-}
-
-function handleKeyPress(e) {
-	var fireButton = document.getElementById("fireButton");
-
-	// in IE9 and earlier, the event object doesn't get passed
-	// to the event handler correctly, so we use window.event instead.
-	e = e || window.event;
-
-	if (e.keyCode === 13) {
-		fireButton.click();
-		return false;
-	}
-}
-
-
-// init - called when the page has completed loading
-
-window.onload = init;
-
-function init() {
-	// Fire! button onclick handler
-	var fireButton = document.getElementById("fireButton");
-	fireButton.onclick = handleFireButton;
-
-	// handle "return" key press
-	var guessInput = document.getElementById("guessInput");
-	guessInput.onkeypress = handleKeyPress;
-
-	// place the ships on the game board
-	model.generateShipLocations();
-}
-
-
-
-
+controller.processGuess("B0"); // hit
+controller.processGuess("B1"); // hit
+controller.processGuess("B2"); // hit
+*/
 

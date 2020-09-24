@@ -264,9 +264,38 @@ var ford = {
   }  
 }
 
-ford.drive();
-ford.start();
-ford.addFuel(2);
-ford.start();
-ford.drive();
-ford.stop();
+console.log("arsenal champion")
+
+// ford.drive();
+// ford.start();
+// ford.addFuel(2);
+// ford.start();
+// ford.drive();
+// ford.stop();
+
+// var test1 = {};
+// var test2 = [];
+// var test3 = null;
+// var test4;
+// var test5 = {"f": 123};
+// var test6 = ["f", 123];
+// function test9() {return "aff"};
+// var test7 = test9();
+
+// console.log(typeof test1);
+// console.log(typeof test2);
+// console.log(typeof test3);
+// console.log(typeof test4);
+// console.log(typeof test9);
+// console.log(typeof test7);
+
+
+function Duck(sound) {
+  this.sound = sound;
+  this.quack = function() {console.log(this.sound);}
+}
+
+var toy = new Duck("quack quack");
+toy.quack();
+console.log(typeof toy);
+console.log(toy instanceof Duck);
